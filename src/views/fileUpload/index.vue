@@ -2,7 +2,7 @@
   <div>
     <importFile></importFile>
     <search></search>
-    <Table></Table>
+    <!-- <Table></Table> -->
   </div>
 </template>
 <script>
@@ -14,7 +14,7 @@ export default {
   components: {
     importFile,
     search,
-    Table
+    // Table
   },
   data() {
     return {};

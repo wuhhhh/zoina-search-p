@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-table :data="tableData" style="width: 100%" >
+    <el-table :data="tableData" style="width: 100%"  >
       <el-table-column type="expand">
         <template slot-scope="props">
           <el-form label-position="left" inline class="demo-table-expand">
@@ -84,7 +84,19 @@ export default {
   created() {
     this.loadPage()
   },
+    props:{
+    idxName:{
+      type:String
+    },
+    className:{
+      type:String
+    },
+    queryObject:{
+      type:Object
+    }
+  },
   methods: {
+   
     handleSizeChange(val) {
       console.log(`每页 ${val} 条`);
       this.pageSize = val;

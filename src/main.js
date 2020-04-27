@@ -5,9 +5,11 @@ import axios from "axios";
 // Element
 import ElementUI from "element-ui";
 import 'element-ui/lib/theme-chalk/index.css';
+import VueClipboard from 'vue-clipboard2'
 
 
 Vue.use(ElementUI);
+Vue.use(VueClipboard);
 Vue.prototype.$axios = axios
 
 new Vue({
